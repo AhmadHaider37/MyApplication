@@ -4,29 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+
     android:gravity="top"
-    android:layout_gravity="top"
+
     tools:context=".TrackActivity"
     >
 
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="69dp">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Monday" />
+            android:text="Date" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tuesday" />
+            android:text="Weight" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Wednesday" />
+            android:text="progress" />
     </com.google.android.material.tabs.TabLayout>
 </LinearLayout>
