@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WelcomeActivity"
+    android:gravity="center" >
+
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="WELCOME"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <Button
+        android:layout_width="153dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="create your diet"
+        android:onClick="creat"
+/>
+
+</LinearLayout>

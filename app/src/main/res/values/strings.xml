@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="goals">
+        <item>maintain weight</item>
+        <item>gain weight</item>
+        <item>lose weight</item>
+    </string-array>
+</resources>
