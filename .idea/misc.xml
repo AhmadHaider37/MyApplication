@@ -5,10 +5,11 @@
       <map>
         <entry key="..\:/Users/user21/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/user21/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_array_list.xml" value="0.20108695652173914" />
-        <entry key="..\:/Users/user21/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_create_diet.xml" value="0.4" />
-        <entry key="..\:/Users/user21/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_diet.xml" value="0.1" />
+        <entry key="..\:/Users/user21/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_create_diet.xml" value="0.264" />
+        <entry key="..\:/Users/user21/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_diet.xml" value="0.2" />
         <entry key="..\:/Users/user21/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user21/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_menu.xml" value="0.21195652173913043" />
+        <entry key="..\:/Users/user21/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_profile.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/user21/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
         <entry key="..\:/Users/user21/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_track.xml" value="0.264" />
         <entry key="..\:/Users/user21/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_welcome.xml" value="0.176" />

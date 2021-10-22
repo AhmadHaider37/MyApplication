@@ -18,10 +18,6 @@ public class DietActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
-    public void track(View view) {
-        Intent intent = new Intent(this,  TrackActivity.class );
-        startActivity(intent);
-
-    }
+    
 
 }

@@ -4,21 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EB121010"
+    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".WelcomeActivity"
-    android:gravity="center" >
+    android:outlineAmbientShadowColor="@color/material_on_surface_stroke"
+    android:outlineSpotShadowColor="#151515"
+    tools:context=".WelcomeActivity">
 
 
     <TextView
         android:id="@+id/textViewWelcome"
-        android:layout_width="130dp"
-        android:layout_height="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="5dp"
-        android:padding="5dp"
         android:foregroundGravity="center"
         android:gravity="center"
+        android:padding="5dp"
         android:text="WELCOME"
+        android:textColor="#FF5722"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="147dp" />
@@ -29,9 +33,8 @@
         android:layout_gravity="center"
         android:foregroundGravity="center"
         android:gravity="center"
-        android:padding="5dp"
-        android:text="create your diet"
         android:onClick="creat"
-/>
+        android:padding="5dp"
+        android:text="create your diet" />
 
 </LinearLayout>

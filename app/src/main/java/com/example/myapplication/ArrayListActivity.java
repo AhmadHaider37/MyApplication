@@ -21,7 +21,7 @@ public class ArrayListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_array_list);
         list = new ArrayList<>();
-        list.add(new Meal("this is my first item",R.drawable.healthyfood, true,50));
+        list.add(new Meal("MAQLOBA",R.drawable.healthyfood, true,50));
         list.add(new Meal("this is my first item",R.drawable.ic_launcher_background, true,50));
         list.add(new Meal("this is my first item",R.drawable.healthyfood, true,50));
         list.add(new Meal("this is my first item",R.drawable.ic_launcher_background, true,50));

@@ -39,10 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
     public void login(View view) {
         Intent intent = new Intent(this, WelcomeActivity.class);
         if (!editTextEmail.getText().toString().equals("")) {
-            SharedPreferences sp= getSharedPreferences("setting",MODE_PRIVATE);
-            SharedPreferences.Editor editor=sp.edit();
-            editor.putString("email",editTextEmail.getText().toString());
-            editor.putString("password",editTextPassword.getText().toString());
+           SharedPreferences sp= getSharedPreferences("setting",MODE_PRIVATE);
+           SharedPreferences.Editor editor=sp.edit();         editor.putString("email",editTextEmail.getText().toString());
+           editor.putString("password",editTextPassword.getText().toString());
             editor.commit();
             intent.putExtra("name", editTextEmail.getText().toString());
             startActivity(intent);

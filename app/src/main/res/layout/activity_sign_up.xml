@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#201D1D"
+    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".signUpActivity"
-    android:gravity="center">
+    tools:context=".signUpActivity">
 
     <EditText
         android:id="@+id/editTextEmail"
@@ -15,6 +16,8 @@
         android:ems="10"
         android:hint="example@male.com"
         android:inputType="textEmailAddress"
+        android:textColor="#8BF3E2E2"
+        android:textColorHint="#8BF3E2E2"
         tools:layout_editor_absoluteX="93dp"
         tools:layout_editor_absoluteY="56dp" />
 
@@ -25,6 +28,8 @@
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
+        android:textColor="#8BF3E2E2"
+        android:textColorHint="#8BF3E2E2"
         tools:layout_editor_absoluteX="98dp"
         tools:layout_editor_absoluteY="119dp" />
 
@@ -35,17 +40,17 @@
         android:ems="10"
         android:hint="day/month/year"
         android:inputType="date"
+        android:textColorHint="#8BF3E2E2"
         tools:layout_editor_absoluteX="93dp"
         tools:layout_editor_absoluteY="189dp" />
-
 
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="signUp"
         android:text="sign up"
         tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="450dp"
-        android:onClick="signUp"/>
+        tools:layout_editor_absoluteY="450dp" />
 </LinearLayout>

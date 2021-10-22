@@ -36,14 +36,7 @@ public class CustomAdapter extends ArrayAdapter<Meal> {
         if(meal!=null){
             ImageView imageView=view.findViewById(R.id.imageItem);
              TextView textViewDescription =view.findViewById(R.id.TextViewDesc);
-             Button itemButton =view.findViewById(R.id.itemButton);
-itemButton.setOnClickListener(new View.OnClickListener(){
-    public void onClick(View view ){
-        Toast.makeText(context, "this item was added to shopping cart", Toast.LENGTH_LONG).show();
-    }
-                                  }
-
-);
+           //  Button itemButton =view.findViewById(R.id.itemButton);
              imageView.setImageResource(meal.getResid());
              textViewDescription.setText(meal.getDescription());
 
