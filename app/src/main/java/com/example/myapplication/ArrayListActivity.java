@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -21,11 +20,11 @@ public class ArrayListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_array_list);
         list = new ArrayList<>();
-        list.add(new Meal("MAQLOBA",R.drawable.healthyfood, true,50));
-        list.add(new Meal("this is my first item",R.drawable.ic_launcher_background, true,50));
-        list.add(new Meal("this is my first item",R.drawable.healthyfood, true,50));
-        list.add(new Meal("this is my first item",R.drawable.ic_launcher_background, true,50));
-        list.add(new Meal("this is my first item",R.drawable.healthyfood, true,80));
+        list.add(new Meal("MAQLOBA",R.drawable.maqluba, true,50, 5000, 350));
+        list.add(new Meal("MJADRA",R.drawable.mjadra, true,50, 5000, 350));
+        list.add(new Meal("SALMON",R.drawable.salmon, true,50, 5000, 350));
+        list.add(new Meal("STEAK",R.drawable.steak, true,50, 5000, 350));
+        list.add(new Meal("CHEAKIN",R.drawable.cheaken, true,80, 5000, 350));
         myListView = findViewById(R.id.myListView);
         myAdapter = new CustomAdapter(this, R.layout.meals_row, list);
         myListView.setAdapter(myAdapter);

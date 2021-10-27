@@ -29,21 +29,26 @@
                 android:layout_height="50dp"
                 android:layout_gravity="top"
                 android:text="description"
+                android:textColor="#F60707"
                 android:textSize="24dp" />
 
             <TextView
                 android:id="@+id/textView7"
-                android:layout_width="119dp"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:gravity="center"
+                android:text="calories:"
+                android:textColor="#F1E7E7" />
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="119dp"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:gravity="center"
+                android:text="protien:"
+                android:textColor="#F3F0F0" />
 
         </LinearLayout>
 

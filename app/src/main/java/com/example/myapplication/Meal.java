@@ -5,12 +5,17 @@ public class Meal {
     private int resid;//image id to be loaded
     private boolean isHappy;
     private int amount;
+    private int calories;
+    private int protein;
 
-    public Meal(String description, int resid, boolean isHappy, int amount) {
+
+    public Meal(String description, int resid, boolean isHappy, int amount, int calories, int protein) {
         this.description = description;
         this.resid = resid;
         this.isHappy = isHappy;
         this.amount = amount;
+        this.calories = calories;
+        this.protein = protein;
     }
 
     public String getDescription() {
@@ -46,4 +51,11 @@ public class Meal {
     }
 
 
+    public int getCalories() {
+        return calories;
+    }
+
+    public void setCalories(int calories) {
+        this.calories = calories;
+    }
 }
