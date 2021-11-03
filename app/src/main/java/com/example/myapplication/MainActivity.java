@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         editTextEmail = findViewById(R.id.editTextEmailAddress);
         editTextPassword = findViewById(R.id.editTextTextPassword);
         signUpButton = findViewById(R.id.buttonSignUp);
+
         buttonLogin = findViewById(R.id.buttonLogin);
         buttonLogin.setOnLongClickListener(this);
         SharedPreferences sp= getSharedPreferences("setting",MODE_PRIVATE);
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
     }
 
     public void login(View view) {
-        Intent intent = new Intent(this, WelcomeActivity.class);
+
         if (!editTextEmail.getText().toString().equals("")) {
            SharedPreferences sp= getSharedPreferences("setting",MODE_PRIVATE);
            SharedPreferences.Editor editor=sp.edit();         editor.putString("email",editTextEmail.getText().toString());
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             editor.commit();
 
             login(editTextEmail.getText().toString(), editTextPassword.getText().toString());
-            startActivity(intent);
+
         }
     }
 
@@ -68,30 +69,13 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
     }
 
     public void signUp(View view) {
-        Intent intent = new Intent(this, signUpActivity.class);
-        startActivity(intent);
+
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu,menu);
-        return super.onCreateOptionsMenu(menu);
-    }
+   
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.settings:
-                Toast.makeText(this, "Settings", Toast.LENGTH_LONG).show();
-                break;
-            case R.id.exit_menu:
-                //closeApplication();
-                break;
-        }
 
-        return super.onOptionsItemSelected(item);
-    }
     public void login(String email,String password){
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {

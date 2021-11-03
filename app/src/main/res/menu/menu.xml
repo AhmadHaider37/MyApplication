@@ -3,9 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/settings"
-        android:title="Settings" />
+        android:id="@+id/Camera"
+        android:title="Camera" />
     <item
-        android:id="@+id/exit_menu"
+        android:id="@+id/exitbox"
         android:title="exit" />
 </menu>

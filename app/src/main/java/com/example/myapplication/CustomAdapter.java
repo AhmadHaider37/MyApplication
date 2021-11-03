@@ -36,9 +36,15 @@ public class CustomAdapter extends ArrayAdapter<Meal> {
         if(meal!=null){
             ImageView imageView=view.findViewById(R.id.imageItem);
              TextView textViewDescription =view.findViewById(R.id.TextViewDesc);
-           //  Button itemButton =view.findViewById(R.id.itemButton);
+            TextView textViewCalories =view.findViewById(R.id.caloriesTextview);
+            TextView textViewProtien =view.findViewById(R.id.protienTextView);
+
+            //  Button itemButton =view.findViewById(R.id.itemButton);
              imageView.setImageResource(meal.getResid());
              textViewDescription.setText(meal.getDescription());
+             textViewCalories.setText("Calories: "+meal.getCalories());
+            textViewProtien.setText("Protien: "+meal.getProtein());
+
 
 
         }

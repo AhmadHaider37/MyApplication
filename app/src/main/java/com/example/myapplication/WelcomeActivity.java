@@ -66,11 +66,13 @@ public class WelcomeActivity extends AppCompatActivity implements DialogInterfac
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.settings:
-                Toast.makeText(this, "Settings", Toast.LENGTH_LONG).show();
+            case R.id.Camera:
+                Intent intent = new Intent( this, ProfileActivity.class);
+                startActivity(intent);
                 break;
-            case R.id.exit_menu:
+            case R.id.exitbox:
                 //closeApplication();
+                finish();
                 break;
         }
 

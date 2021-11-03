@@ -58,4 +58,12 @@ public class Meal {
     public void setCalories(int calories) {
         this.calories = calories;
     }
+
+    public int getProtein() {
+        return protein;
+    }
+
+    public void setProtein(int protein) {
+        this.protein = protein;
+    }
 }
