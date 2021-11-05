@@ -36,7 +36,6 @@ public class signUpActivity extends AppCompatActivity implements View.OnClickLis
         signupBtn.setOnClickListener(this);
     }
 
-
     public void signUp(String email , String password){
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override

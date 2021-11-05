@@ -68,10 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         return true;
     }
 
-    public void signUp(View view) {
 
-
-    }
 
    
 
@@ -99,5 +96,6 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
                     }
                 });
     }
+
 
 }
