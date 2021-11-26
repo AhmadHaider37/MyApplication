@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
     private EditText editTextEmail, editTextPassword;
     private Button buttonLogin, signUpButton;
     private FirebaseAuth mAuth;
-
+    private Intent musicIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         editTextEmail = findViewById(R.id.editTextEmailAddress);
         editTextPassword = findViewById(R.id.editTextTextPassword);
         signUpButton = findViewById(R.id.buttonSignUp);
-
+        musicIntent=new Intent(this,MusicService.class);
+        startService(musicIntent);
         buttonLogin = findViewById(R.id.buttonLogin);
         buttonLogin.setOnLongClickListener(this);
         SharedPreferences sp= getSharedPreferences("setting",MODE_PRIVATE);
