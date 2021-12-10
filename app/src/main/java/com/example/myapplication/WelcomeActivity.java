@@ -27,8 +27,8 @@ public class WelcomeActivity extends AppCompatActivity implements DialogInterfac
           textViewWelcome = findViewById(R.id.textViewWelcome);
           button = findViewById(R.id.buttonLogin);
 
-          String name =getIntent().getStringExtra("name");
-          textViewWelcome.setText("welcome  "+name);
+//          String name =getIntent().getStringExtra("name");
+//          textViewWelcome.setText("welcome  "+name);
     }
     public void onBackPressed(){
         AlertDialog.Builder builder= new AlertDialog.Builder(this);

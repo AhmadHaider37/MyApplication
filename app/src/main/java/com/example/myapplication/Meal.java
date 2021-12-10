@@ -7,7 +7,9 @@ public class Meal {
     private int amount;
     private int calories;
     private int protein;
+    public Meal(){
 
+    }
 
     public Meal(String description, int resid, boolean isHappy, int amount, int calories, int protein) {
         this.description = description;
