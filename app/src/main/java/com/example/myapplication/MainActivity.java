@@ -51,12 +51,12 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             editTextPassword.setText(password);
 
         }
-        Intent notifyIntent = new Intent(this,NotificationIntentService.class);
+        Intent notifyIntent = new Intent(this,NotifactionReciever.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast
                 (this, NOTIFICATION_REMINDER_NIGHT, notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
         AlarmManager alarmManager = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
         alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,  System.currentTimeMillis(),
-                1000 * 60 * 60 * 24, pendingIntent);
+                1000 * 60 * 2, pendingIntent);
 
     }
 

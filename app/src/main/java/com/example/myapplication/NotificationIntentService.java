@@ -8,6 +8,7 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.Context;
 import android.os.Build;
+import android.util.Log;
 
 import androidx.core.app.NotificationManagerCompat;
 
@@ -47,6 +48,7 @@ public class NotificationIntentService extends IntentService {
         NotificationManager mNotificationManager;
         mNotificationManager =
                 (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
+        Log.d("HANEEN","TESTING");
          //this is required for SDK version 26 and above
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
         {

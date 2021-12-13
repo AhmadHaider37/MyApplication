@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="349dp"
+        android:background="#0C0B0B"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextViewDesc"
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:text="CALORIES NEEDED:"
+            android:textColor="#F60707"
+            android:textSize="24dp" />
+
+
+        <TextView
+            android:id="@+id/protienTextView"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="PROTIEN:"
+            android:textColor="#F3F0F0" />
+
+        <TextView
+            android:id="@+id/carbstextview"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="CARBS ::"
+            android:textColor="#F3F0F0" />
+
+        <TextView
+            android:id="@+id/fatstextview"
+            android:layout_width="202dp"
+            android:layout_height="53dp"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:text="fats needed:"
+            android:textColor="#E6E0E0"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="meals"
+            android:text="meals" />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
