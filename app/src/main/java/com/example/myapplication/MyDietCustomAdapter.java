@@ -39,7 +39,7 @@ public class MyDietCustomAdapter extends ArrayAdapter<Mydiet> {
              textViewDescription.setText(mydiet.getDescription());
             textViewProtien.setText("Protien: "+mydiet.getProtein());
             textViewCarbs.setText("Carbs: "+mydiet.getCarbs());
-            textViewFats.setText("Fats: "+mydiet.);
+            textViewFats.setText("Fats: "+mydiet.getFats());
 
 
 

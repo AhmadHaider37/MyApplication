@@ -8,7 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,11 +28,19 @@ public class createDietActivity extends AppCompatActivity implements AdapterView
     private FirebaseAuth  maFirebaseAuth= FirebaseAuth.getInstance();
     //gets the root of the real time databasein the fb console
     private FirebaseDatabase database=FirebaseDatabase.getInstance("https://ahmad-71616-default-rtdb.europe-west1.firebasedatabase.app/");
+    private String program;
+    private EditText editTextHeight;
+    private EditText editTextWeight;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_diet);
         Spinner spinner=findViewById(R.id.spinner);
+
+        editTextHeight = findViewById(R.id.editTextHeight);
+        editTextWeight = findViewById(R.id.editTextWeight);
+
+
         ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this,R.array.goals , android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
@@ -60,12 +70,17 @@ public class createDietActivity extends AppCompatActivity implements AdapterView
     }
     public void diet(View view ){
         Intent intent = new Intent(this, DietActivity.class);
+        String weight = editTextWeight.getText().toString();
+        String height = editTextHeight.getText().toString();
+        String MyDiet= program;
+
+
         startActivity(intent);
     }
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        String text= adapterView.getItemAtPosition(i).toString();
+        program= adapterView.getItemAtPosition(i).toString();
         Toast.makeText(adapterView.getContext(), "text", Toast.LENGTH_SHORT).show();
     }
 

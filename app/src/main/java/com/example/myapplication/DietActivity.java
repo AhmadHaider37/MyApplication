@@ -21,7 +21,7 @@ public class DietActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_array_list);
         list = new ArrayList<>();
-        list.add(new Mydiet("Your diet", true, 50, 5000, 350, 900));
+        list.add(new Mydiet("Your diet", true, 50, 5000, 350, 900,50));
         myListView = findViewById(R.id.myListView);
          myAdapter = new MyDietCustomAdapter(this, R.layout.diet_row , list);
         myListView.setAdapter(myAdapter);

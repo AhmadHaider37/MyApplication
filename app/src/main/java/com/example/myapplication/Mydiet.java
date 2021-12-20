@@ -2,23 +2,24 @@ package com.example.myapplication;
 
 public class Mydiet {
     private String description;
-    private int resid;//image id to be loaded
     private boolean isHappy;
     private int amount;
     private int calories;
     private int protein;
     private int carbs;
+    private int fats;
 
     public Mydiet(){
 
     }
-    public Mydiet(String description,  boolean isHappy, int amount, int calories, int protein , int carbs) {
+    public Mydiet(String description,  boolean isHappy, int amount, int calories, int protein , int carbs , int fats) {
         this.description = description;
         this.isHappy = isHappy;
         this.amount = amount;
         this.calories = calories;
         this.protein = protein;
         this.carbs= carbs;
+        this.fats=fats;
     }
     public String getDescription() {
         return description;
@@ -70,4 +71,11 @@ public class Mydiet {
         this.carbs = carbs;
     }
 
+    public int getFats() {
+        return fats;
+    }
+
+    public void setFats(int fats) {
+        this.fats=fats;
+    }
 }

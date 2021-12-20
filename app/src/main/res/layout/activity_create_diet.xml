@@ -24,7 +24,7 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/editTextWeight"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -35,13 +35,13 @@
         android:textColorHint="#46C3B9B9" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/editTextHeight"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:ems="10"
         android:gravity="center"
-        android:hint="hieght"
+        android:hint="height"
         android:inputType="number"
         android:textColorHint="#46C3B9B9" />
 
