@@ -20,8 +20,11 @@ public class DietActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_array_list);
+
+        double weight = getIntent().getDoubleExtra("weight",0.0);
+        double height = getIntent().getDoubleExtra("height",0.0);
         list = new ArrayList<>();
-        list.add(new Mydiet("Your diet", true, 50, 5000, 350, 900,50));
+        list.add(new Mydiet("Your diet", true, 50, (int)height+(int)weight*30 , (int)weight*2 , (int)weight*4,(int)weight*1));
         myListView = findViewById(R.id.myListView);
          myAdapter = new MyDietCustomAdapter(this, R.layout.diet_row , list);
         myListView.setAdapter(myAdapter);
@@ -35,7 +38,7 @@ public class DietActivity extends AppCompatActivity {
     }
      public void meals(View view) {
         Intent intent = new Intent(this, ArrayListActivity.class);
-     startActivity(intent);
+        startActivity(intent);
 
     }
 }

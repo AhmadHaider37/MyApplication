@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/TextViewDesc"
+            android:id="@+id/TextViewCalories"
             android:layout_width="match_parent"
             android:layout_height="117dp"
             android:layout_gravity="top"

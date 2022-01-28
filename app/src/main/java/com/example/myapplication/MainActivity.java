@@ -64,7 +64,8 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
 
         if (!editTextEmail.getText().toString().equals("")) {
            SharedPreferences sp= getSharedPreferences("setting",MODE_PRIVATE);
-           SharedPreferences.Editor editor=sp.edit();         editor.putString("email",editTextEmail.getText().toString());
+           SharedPreferences.Editor editor=sp.edit();
+           editor.putString("email",editTextEmail.getText().toString());
            editor.putString("password",editTextPassword.getText().toString());
             editor.commit();
 

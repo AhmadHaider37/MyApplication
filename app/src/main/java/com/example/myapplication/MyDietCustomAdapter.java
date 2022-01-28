@@ -32,11 +32,11 @@ public class MyDietCustomAdapter extends ArrayAdapter<Mydiet> {
             view= LayoutInflater.from(context).inflate(resource,parent , false);
         Mydiet mydiet=getItem(position);
         if(mydiet!=null){
-             TextView textViewDescription =view.findViewById(R.id.TextViewDesc);
+             TextView textViewCalories =view.findViewById(R.id.TextViewCalories);
             TextView textViewProtien =view.findViewById(R.id.protienTextView);
             TextView textViewCarbs =view.findViewById(R.id.carbstextview);
             TextView textViewFats =view.findViewById(R.id.fatstextview);
-             textViewDescription.setText(mydiet.getDescription());
+            textViewCalories.setText("Calories Needed: "+mydiet.getCalories());
             textViewProtien.setText("Protien: "+mydiet.getProtein());
             textViewCarbs.setText("Carbs: "+mydiet.getCarbs());
             textViewFats.setText("Fats: "+mydiet.getFats());

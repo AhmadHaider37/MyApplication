@@ -31,6 +31,7 @@ public class createDietActivity extends AppCompatActivity implements AdapterView
     private String program;
     private EditText editTextHeight;
     private EditText editTextWeight;
+    private ArrayList<Meal> meals=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,7 +58,7 @@ public class createDietActivity extends AppCompatActivity implements AdapterView
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot: snapshot.getChildren()){
                     Meal meal1=dataSnapshot.getValue(Meal.class);
-               //     ArrayList.add(meal1);
+                    meals.add(meal1);
 
                 }
             }
@@ -72,9 +73,10 @@ public class createDietActivity extends AppCompatActivity implements AdapterView
         Intent intent = new Intent(this, DietActivity.class);
         String weight = editTextWeight.getText().toString();
         String height = editTextHeight.getText().toString();
-        String MyDiet= program;
-
-
+        double weightVal = Double.parseDouble(weight);
+        double heightVal = Double.parseDouble(height);
+        intent.putExtra("weight", weightVal);
+        intent.putExtra("height", heightVal);
         startActivity(intent);
     }
 
