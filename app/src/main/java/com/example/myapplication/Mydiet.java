@@ -1,49 +1,27 @@
 package com.example.myapplication;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Mydiet {
-    private String description;
-    private boolean isHappy;
-    private int amount;
     private int calories;
     private int protein;
     private int carbs;
     private int fats;
+    private String month;
 
     public Mydiet(){
 
     }
-    public Mydiet(String description,  boolean isHappy, int amount, int calories, int protein , int carbs , int fats) {
-        this.description = description;
-        this.isHappy = isHappy;
-        this.amount = amount;
+    public Mydiet( int calories, int protein , int carbs , int fats) {
         this.calories = calories;
         this.protein = protein;
         this.carbs= carbs;
         this.fats=fats;
-    }
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-
-    public boolean isHappy() {
-        return isHappy;
-    }
-
-    public void setHappy(boolean happy) {
-        isHappy = happy;
-    }
-
-    public int getAmount() {
-        return amount;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
+        DateFormat dateFormat = new SimpleDateFormat("MM");
+        Date date = new Date();
+        this.month = dateFormat.format(date);
     }
 
 
@@ -77,5 +55,13 @@ public class Mydiet {
 
     public void setFats(int fats) {
         this.fats=fats;
+    }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public void setMonth(String month) {
+        this.month = month;
     }
 }

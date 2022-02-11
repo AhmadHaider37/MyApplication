@@ -53,6 +53,15 @@
             android:textColor="#E6E0E0"
             android:textSize="16sp" />
 
+        <TextView
+            android:id="@+id/DatetextView"
+            android:layout_width="122dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="Date:"
+            android:textColor="#F3EAEA" />
+
         <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"

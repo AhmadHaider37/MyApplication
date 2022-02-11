@@ -36,10 +36,13 @@ public class MyDietCustomAdapter extends ArrayAdapter<Mydiet> {
             TextView textViewProtien =view.findViewById(R.id.protienTextView);
             TextView textViewCarbs =view.findViewById(R.id.carbstextview);
             TextView textViewFats =view.findViewById(R.id.fatstextview);
+            TextView textViewDate =view.findViewById(R.id.DatetextView);
+
             textViewCalories.setText("Calories Needed: "+mydiet.getCalories());
             textViewProtien.setText("Protien: "+mydiet.getProtein());
             textViewCarbs.setText("Carbs: "+mydiet.getCarbs());
             textViewFats.setText("Fats: "+mydiet.getFats());
+            textViewDate.setText("Month: "+mydiet.getMonth()+" ");
 
 
 
