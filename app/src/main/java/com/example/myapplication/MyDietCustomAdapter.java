@@ -17,12 +17,12 @@ public class MyDietCustomAdapter extends ArrayAdapter<Mydiet> {
 
     private Context context;
     private int resource;
-
     public MyDietCustomAdapter(@NonNull Context  context , int resource , @NonNull List<Mydiet> objects){
         super(context ,resource , objects);
         this.context =context;
         this.resource = resource;
     }
+
 
     @NonNull
     @Override

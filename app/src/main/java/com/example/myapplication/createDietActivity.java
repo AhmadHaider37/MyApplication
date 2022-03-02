@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class createDietActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class createDietActivity extends AppCompatActivity{
     //get instance of authentiacation priject firebase console
     private FirebaseAuth  maFirebaseAuth= FirebaseAuth.getInstance();
     //gets the root of the real time databasein the fb console
@@ -66,14 +66,6 @@ public class createDietActivity extends AppCompatActivity implements AdapterView
         startActivity(intent);
     }
 
-    @Override
-    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        program= adapterView.getItemAtPosition(i).toString();
-        Toast.makeText(adapterView.getContext(), "text", Toast.LENGTH_SHORT).show();
-    }
 
-    @Override
-    public void onNothingSelected(AdapterView<?> adapterView) {
 
-    }
 }

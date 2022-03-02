@@ -20,11 +20,11 @@ public class ArrayListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_array_list);
         list = new ArrayList<>();
-        list.add(new Meal("MAQLOBA",R.drawable.maqluba, true,50, 5000, 350));
-        list.add(new Meal("MJADRA",R.drawable.mjadra, true,50, 5000, 350));
-        list.add(new Meal("SALMON",R.drawable.salmon, true,50, 5000, 350));
-        list.add(new Meal("STEAK",R.drawable.steak, true,50, 5000, 350));
-        list.add(new Meal("CHEAKIN",R.drawable.cheaken, true,80, 5000, 350));
+        list.add(new Meal("MAQLOBA",R.drawable.maqluba,  5000, 350));
+        list.add(new Meal("MJADRA",R.drawable.mjadra,  5000, 350));
+        list.add(new Meal("SALMON",R.drawable.salmon, 5000, 350));
+        list.add(new Meal("STEAK",R.drawable.steak, 5000, 350));
+        list.add(new Meal("CHEAKIN",R.drawable.cheaken,  5000, 350));
         myListView = findViewById(R.id.myListView);
         myAdapter = new CustomAdapter(this, R.layout.meals_row, list);
         myListView.setAdapter(myAdapter);

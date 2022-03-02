@@ -12,12 +12,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class WelcomeActivity extends AppCompatActivity implements DialogInterface.OnClickListener{
 
     private TextView textViewWelcome;
-    private Button button;
+    private Button createbutton;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +24,7 @@ public class WelcomeActivity extends AppCompatActivity implements DialogInterfac
         setContentView(R.layout.activity_welcome);
 
           textViewWelcome = findViewById(R.id.textViewWelcome);
-          button = findViewById(R.id.buttonLogin);
+          createbutton = findViewById(R.id.buttonLogin);
 
 //          String name =getIntent().getStringExtra("name");
 //          textViewWelcome.setText("welcome  "+name);

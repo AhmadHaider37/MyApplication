@@ -33,6 +33,8 @@ public class NotificationIntentService extends IntentService {
     public NotificationIntentService() {
         super("NotificationIntentService");
     }
+
+
     @Override
     protected void onHandleIntent(Intent intent) {
         Notification.Builder noBuilder=new Notification.Builder(this);
@@ -46,17 +48,13 @@ public class NotificationIntentService extends IntentService {
         NotificationManagerCompat managerCompat=NotificationManagerCompat.from(this);
         managerCompat.notify(NOTIFICATION_ID , notification);
         NotificationManager mNotificationManager;
-        mNotificationManager =
-                (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
+        mNotificationManager = (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
         Log.d("HANEEN","TESTING");
          //this is required for SDK version 26 and above
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
         {
             String channelId = "Your_channel_id";
-            NotificationChannel channel = new NotificationChannel(
-                    channelId,
-                    "Channel human readable title",
-                    NotificationManager.IMPORTANCE_HIGH);
+            NotificationChannel channel = new NotificationChannel(channelId, "Channel human readable title", NotificationManager.IMPORTANCE_HIGH);
             mNotificationManager.createNotificationChannel(channel);
             noBuilder.setChannelId(channelId);
 

@@ -24,7 +24,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity implements View.OnLongClickListener  {
-    private static final String TAG = "FIREBASE";
     private static final int NOTIFICATION_REMINDER_NIGHT = 1;
     private EditText editTextEmail, editTextPassword;
     private Button buttonLogin, signUpButton;
@@ -93,13 +92,12 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-                            Log.d(TAG, "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
                             Intent i=new Intent(MainActivity.this,WelcomeActivity.class);
                             startActivity(i);
                         } else {
                             // If sign in fails, display a message to the user.
-                            Log.w(TAG, "signInWithEmail:failure", task.getException());
+                            Log.w("signInWithEmail:failure", task.getException());
                             Toast.makeText(MainActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
 
