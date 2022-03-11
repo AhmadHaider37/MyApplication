@@ -55,7 +55,7 @@ public class DietActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot: snapshot.getChildren()){
                     Mydiet mydiet=dataSnapshot.getValue(Mydiet.class);
-                    list.add(mydiet);
+                    list.add(0,mydiet);
                     myAdapter.notifyDataSetChanged();
 
                 }

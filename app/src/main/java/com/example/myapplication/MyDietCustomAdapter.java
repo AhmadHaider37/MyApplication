@@ -46,7 +46,6 @@ public class MyDietCustomAdapter extends ArrayAdapter<Mydiet> {
 
 
 
-
         }
         return view;
     }
